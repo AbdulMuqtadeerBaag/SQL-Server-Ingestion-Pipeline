@@ -19,12 +19,12 @@ The project uses a three-layer warehouse architecture:
 - Stores raw incoming data exactly as received.
 - No transformations applied.
 - Helps in traceability and replay if reprocessing is required.
-<br>
+
 2) **Refined Layer (Clean Zone):**
 - Data is cleaned, standardized, validated, deduplicated, and type-corrected.
 - Business rules are applied.
 - Data becomes ready for modeling.
-<br>
+  
 3) **Analytics-Store (Final Zone):**
 - Star-schema tables (Fact & Dimension tables).
 - Optimized for reporting and BI tools.
@@ -38,17 +38,17 @@ This project builds a complete Data Warehouse Pipeline in SQL Server with the fo
 🔹 **Data Ingestion:**
 - Upload data from CSV sources into Landing tables.
 - Use controlled schemas and metadata for consistent ingestion.
-<br>
+
 🔹 **Data Transformation:**
 - Clean null values and inconsistent data.
 - Apply business rules such as mapping, standardization, and conversions.
 - Integrate data from multiple sources.
-<br>
+  
 🔹 **Data Modeling:**
 - Create Dimension tables (DimCustomer, DimProduct, DimDate…).
 - Create Fact tables (FactSales, FactOrders…).
 - Apply surrogate keys, relationships, indexing, and constraints.
-<br>
+
 🔹 **Data Analysis:**
 - Build analytical SQL queries answering business questions:
   - Customer behaviour.
@@ -56,7 +56,7 @@ This project builds a complete Data Warehouse Pipeline in SQL Server with the fo
   - Sales KPIs (Key Performance Indicators).
   - Time-series trends.
   - Aggregated reporting.
-<br>
+
 🔹 **Documentation:**
 - Clear folder structure.
 - SQL scripts for every step.
