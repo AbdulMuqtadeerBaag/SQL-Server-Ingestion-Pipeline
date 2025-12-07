@@ -34,7 +34,7 @@
 -- Drop IngestionDB if it already exists:
   IF DB_ID('IngestionDB') IS NOT NULL
     BEGIN
-        ALTER DATABASE IngestionDB 
+        ALTER DATABASE [IngestionDB] 
         SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
         
         DROP DATABASE [IngestionDB];
