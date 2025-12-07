@@ -1,7 +1,7 @@
 /*
-==========================================================
+===================================================================
               DDL Scripts: Create Raw Tables
-==========================================================
+===================================================================
 Project: SQL Server Ingestion Pipeline
 Scripts: 2.1_Create_Raw_Tables.sql
 Author: Abdul Muqtadeer Baag
@@ -13,6 +13,8 @@ Purpose:
 Warning!
     This table holds raw unmodified source data.
     Do not apply any transformations here.
+
+-------------------------------------------------------------------
 */
 
 -- Use the Database:
