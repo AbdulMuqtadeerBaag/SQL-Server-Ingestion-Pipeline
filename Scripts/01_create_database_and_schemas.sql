@@ -1,11 +1,11 @@
 /*
-======================================================================
-                  Create Database and Schemas
-======================================================================
+=========================================================================
+               DDL Scripts: Create Database and Schemas
+=========================================================================
  Project: SQL Server Data Ingestion Pipeline
  Script: 01_create_database_and_schemas.sql
  Author: Abdul Muqtadeer Baag
- Created On: 2025-12-07
+ Created On: 07/12/2025
 
  Overview:
    This script initializes the IngestionDB environment used in the
@@ -20,13 +20,12 @@
          2) clean    – stores validated and transformed data.
          3) final    – stores curated, analytics-ready data.
 
-
- ⚠ Warning:
+⚠Warning:
      Running this script will DROP the existing DataWarehouse database.
      All current data will be permanently deleted.  
      Make sure you have backups before executing.
 
----------------------------------------------------------------------------
+==========================================================================
 */
 
 -- Use the Master Database:
@@ -36,7 +35,7 @@
 -- Drop IngestionDB if it already exists:
   IF DB_ID('IngestionDB') IS NOT NULL
     BEGIN
-        ALTER DATABASE [IngestionDB] 
+        ALTER DATABASE [IngestionDB]
         SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
         
         DROP DATABASE [IngestionDB];
