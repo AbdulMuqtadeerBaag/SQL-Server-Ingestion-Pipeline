@@ -25,6 +25,8 @@
      Running this script will DROP the existing DataWarehouse database.
      All current data will be permanently deleted.  
      Make sure you have backups before executing.
+
+---------------------------------------------------------------------------
 */
 
 -- Use the Master Database:
