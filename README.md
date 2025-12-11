@@ -14,6 +14,7 @@ This project demonstrates a complete SQL Server–based Data Warehouse Pipeline 
 ## 🏗️ Data Architecture
 
 The project uses a three-layer warehouse architecture:
+![Architecture](./Docs/Data_Architecture.jpg)
 
 1. **Landing Layer (Raw Zone):**
 - Stores raw incoming data exactly as received.
