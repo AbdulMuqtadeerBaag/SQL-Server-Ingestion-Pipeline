@@ -96,6 +96,31 @@ These analytical insights help stakeholders monitor KPIs, identify growth opport
 ---
 ## 📂 Repository Structure
 
+```
+SQL-Server-Ingestion-Pipeline/
+├── Datasets/                         # Raw source datasets
+│   ├── Source_CRM/                   # CRM data files
+│   └── Source_ERP/                   # ERP data files
+│
+├── Docs/                             # Project documentation & diagrams
+│   ├── Data_Integration.jpg          # Data integration workflow
+│   ├── Data_Architecture.jpg         # End-to-end architecture diagram
+│   ├── Data_Catalog.md               # Catalog of datasets, including field descriptions and metadata
+│   ├── Data_Flow.jpg                 # Data flow diagram (source → DW)
+│   ├── Data_Model.jpg                # Dimensional model (star schema)
+│   ├── ETL.png                       # ETL process overview
+│   └── Naming_Conventions.md         # Consistent naming guidelines for tables, columns, and files
+│
+├── Scripts/                              # SQL scripts for ETL and transformations
+│   ├── 01_create_database_and_schemas/   # Database and schema creation scripts
+│   ├── 02_Raw_Layer/                     # Scripts for extracting and loading raw data
+│   ├── 03_Clean_Layer/                   # Scripts for cleaning and transforming data
+│   └── 04_Final_Layer/                   # Scripts for creating analytical models
+│
+├── LICENSE                          # License information for the repository
+|
+└── README.md                        # Project overview and instructions
+```
 
 ---
 ## 🛡️ License
