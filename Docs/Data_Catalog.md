@@ -56,7 +56,6 @@ The Final Layer is the business-level data representation, structured to support
 | Order_Date      | DATE          | The date when the order was placed.                                                           |
 | Shipping_Date   | DATE          | The date when the order was shipped to the customer.                                          |
 | Due_Date        | DATE          | The date when the order payment was due.                                                      |
-| Gender           | VARCHAR(15)   | The gender of the customer (e.g., 'Male', 'Female', 'n/a').                                   |
 | Sales_Amount    | INT           | The total monetary value of the sale for the line item, in whole currency units (e.g., 25).   |
 | Quantity        | INT           | The number of units of the product ordered for the line item (e.g., 1).                       |
 | Price           | INT           | The price per unit of the product for the line item, in whole currency units (e.g., 25).      |
